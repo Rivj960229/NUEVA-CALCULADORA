@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="descuento.css">
+</head>
+<header>
+    <img src="imagenes/logo titanmax redim.png" alt="">
+</header>
+<body>
+    <div class="calculator">
+        <h2>Cobro primer mes</h2>
+        <div>
+            <label for="plan">Seleccione un plan:</label>
+            <select id="plan">
+                <option value="37990">Plan M60 - $37,990</option>
+                <option value="39990">Plan M70 - $39,990</option>
+                <option value="45990">Plan M80 - $45,990</option>
+                <option value="49990">Plan M85 - $49,990</option>
+                <option value="59990">Plan L200 - $59,990</option>
+                <option value="65990">Plan XL_ilim - $65,990</option>
+            </select>
+        </div>
+        <div>
+            <label for="lineas">Número de líneas contratadas:</label>
+            <input type="number" id="lineas" min="1" value="1">
+        </div>
+        <button onclick="calcularDescuento()">Calcular Descuento</button>
+        <div id="resultado"></div>
+    </div>
+    <div class="regresar">
+    <a href="index.html"><button onclick="irAIndex()">Calculadora</button></a>
+    </div>
+    
+    <footer>
+        <p>CALCULADORA B2B PARA TITANMAX © TITANMAX</p>
+        <p>Realizado por Emilio Rivera</p>
+        <p>En caso de problemas, escriba al: 3218570694</p>
+    </footer>
+    <script src="calcula.js"></script>
+</body>
+</html>
+
