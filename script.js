@@ -36,4 +36,12 @@ function calcularDescuento() {
                                                         "Ahorro total mensual: $" + ahorroTotalMensual.toLocaleString('es-ES', {minimumFractionDigits: 2}) + "<br>" +
                                                         "Costo total sin descuento: $" + costoTotalSinDescuento.toLocaleString('es-ES', {minimumFractionDigits: 2}) + "<br>" +
                                                         "Costo total con descuento: $" + costoTotalConDescuento.toLocaleString('es-ES', {minimumFractionDigits: 2});
+
+
+}
+
+function limpiarCampos() {
+    document.getElementById('plan').selectedIndex = 0; // Restablece la selección del plan al primer plan
+    document.getElementById('lines').value = '1'; // Restablece el número de líneas a 1
+    document.getElementById('resultado').innerHTML = ''; // Limpia el resultado
 }

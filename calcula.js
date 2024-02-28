@@ -22,3 +22,9 @@ function calcularDescuento() {
 
     document.getElementById('resultado').innerHTML = `El precio total con descuento es: ${precioTotal}`;
 }
+function limpiarCampos() {
+    document.getElementById('plan').value = '37990'; // Restablece el valor predeterminado del plan
+    document.getElementById('lineas').value = '1'; // Restablece el valor predeterminado del número de líneas
+    document.getElementById('resultado').innerHTML = ''; // Borra el resultado
+}
+
