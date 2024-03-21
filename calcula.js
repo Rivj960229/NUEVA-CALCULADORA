@@ -9,11 +9,11 @@ function calcularDescuento() {
             descuento = 0.7;
         } else if (planPrecio == 49990) {
             descuento = 0.8;
-        } else if (planPrecio == 59990 || planPrecio == 65990) {
+        } else if (planPrecio == 59990 || planPrecio == 69990) {
             descuento = 0.9;
         }
     } else if (lineas >= 1) {
-        if (planPrecio == 39990 || planPrecio == 45990 || planPrecio == 49990 || planPrecio == 59990 || planPrecio == 65990) {
+        if (planPrecio == 39990 || planPrecio == 45990 || planPrecio == 49990 || planPrecio == 59990 || planPrecio == 69990) {
             descuento = 0.5;
         }
     }
