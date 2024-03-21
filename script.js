@@ -19,7 +19,7 @@ function calcularDescuento() {
                 descuento = 0.3;
                 break;
             case 59990:
-            case 65990:
+            case 69990:
                 descuento = 0.4;
                 break;
         }
